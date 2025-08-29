@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Student Registration Form</title>
+        </head>
+        <body>
+            <header>
+                <h1>Welcome to the Registration Page</h1>
+                <p>Please fill in the form below after reviewing the information sections.</p>
+            </header>
+            <section>
+                <h2>Our Gellary</h2>
+                <p>Visit our Gellary (image, audio, video) below</p>
+                <h3>images</h3>
+                <img src="freeimage.jpg" 
+                alt="image of our students studying together" width="500" height="300">
+                <h3>audio</h3>
+                <h3>video</h3>
+                <video controls autoplay loop muted width="500" height="300" controls>
+                    <source src="freevideo.mp4" alt="video of students studying in library" type="video/mp4">
+                    your browser does not support videos
+                </video>
+                <audio controls>
+                <source src="freeclassic.mp3" alt="cute classics" type="audio/mpeg">
+                    your browser does not support audios
+                </audio>
+            </section>
+            <section>
+                <h2>Courses Offered</h2>
+                <ol>
+                    <li> Front-End Web Development Courses 
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </li>
+                    <li>Back-End Web Development Courses
+                        <ul>
+                            <li>Python</li>
+                            <li>Database Manage</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+            <section>
+    <h2>Available Programs</h2>
+    <table border="1" cellpadding="5">
+      <thead>
+        <tr>
+          <th>Program</th>
+          <th>Duration</th>
+          <th>Mode</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>BSc</td>
+          <td>3 Years</td>
+          <td>On-Campus</td>
+        </tr>
+        <tr>
+          <td>MSc</td>
+          <td>2 Years</td>
+          <td>Online/On-Campus</td>
+        </tr>
+        <tr>
+          <td>PhD</td>
+          <td>4 Years</td>
+          <td>Research-Based</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+        
+            <h2>Registration Form</h2>
+            <form action="" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Personal Informationm</legend>
+                    <label for="fname">First Name:</label>
+                    <input type="=text" name="name" id="name" placeholder="Enter your First name here" required>
+                    <br><br>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your last name here">
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="username@gmail.com" required> 
+                    <!--username@domain.com-->
+                    <br><br>
+                    <label form="Password">Password:</label>
+                    <input type="password" name="password" id="password" minlength="8" maxlength="12" placeholder="Min 8 Chracters" minlength="8"
+                    required>
+                    <br><br>
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age" max="35" min="20" placeholder="Enter your age here">
+                    <br><br>
+                    <label for="dob">Date of Birth</label>
+                    <input type="Date" name="dob" id="dob">
+                    <br><br>
+                    <label for="gender">Gender:</label>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">female
+                </fieldset>
+                <fieldset>
+                    <legend>Educatinal Background</legend>
+                    <label for="Educatinal Level">Educatinal Level:</label>
+                    <select id="Educatinal Level" name="Educatinal Level">
+                     <option value="select level">select Level</option>
+                     <option value="PhD">PhD</option>
+                     <option value="MSc">MSc</option>
+                     <option value="BSc">BSc</option>
+                    </select>
+                    <br><br>
+                    <label o="CV">Upload CV</label>
+                    <input type="file" name="cv" id="cv" accept=".pdf,.doc,.docx" required>
+                    <br><br>
+                    <label for="bio" name="bio" id="bio">Bio:</label>
+                    <textarea name="bio" id="bio" cols="30" rows="10" placeholder="write ypur bio here..."></textarea>
+                    <br><br>
+                    <input type="submit" value="submit">
+
+                </fieldset>
+            </form>
+        </body>   
+</html>
